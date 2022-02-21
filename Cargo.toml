@@ -1,0 +1,19 @@
+[package]
+name = "upload-server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+kamadak-exif = "0.5.4"
+chrono = { version = "0.4.19", features = ["serde"] } 
+serde = { version = "1.0.136", features = ["derive"] }
+uuid = { version = "0.8.2", features = ["serde", "v4"] }
+mp4parse = "0.12.0"
+multipart = "0.18.0"
+reqwest = { version = "0.11.9", features = ["blocking", "json"] }
+http = "0.2.6"
+actix-web = { version = "3.3.3", features = ["openssl"] }
+openssl = "0.10.38"
+dotenv = "0.15.0"
