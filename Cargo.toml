@@ -14,6 +14,7 @@ mp4parse = "0.12.0"
 multipart = "0.18.0"
 reqwest = { version = "0.11.9", features = ["blocking", "json"] }
 http = "0.2.6"
-actix-web = { version = "3.3.3", features = ["openssl"] }
-openssl = "0.10.38"
+actix-web = { version = "3.3.3", features = ["rustls"] }
+rustls = "0.20.4"
 dotenv = "0.15.0"
+json = "0.12.4"
